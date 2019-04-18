@@ -1,0 +1,201 @@
+/* Cuerpo completo*/
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010A;
+}
+/*Cabecera*/
+.contenido{
+  max-width: 900px;
+  margin:0 auto;
+  animation: bounce 1s;
+}
+
+header{
+
+  height:100%;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  padding: 15px 15px 0px 0px;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+#Titulo{
+  width: 70%;
+  text-indent: 15px;
+}
+#Menu{
+  width: 30%;
+  font-size: 18pt;
+  display: flex;
+  flex-direction: row;
+}
+#Menu a{
+  color: white;
+  Width: 33%;
+}
+#Menu .Actual{
+  text-decoration: none;
+}
+/*-------------------------------------------------*/
+.Body{
+
+  margin: 0;
+  padding: 0 0;
+  display: flex ;
+  flex-direction: column;
+  background-color: #82c3a6;
+}
+.ImagenCentral{
+  max-width: inherit;
+}
+.ImagenCentral img{
+  padding: 10%;
+  max-width: inherit;
+}
+.ImagenesSecundarios{
+  margin: 0;
+  padding: 2%;
+  max-width: 900px;
+  display: flex ;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+}
+.ImagenesSecundariosP{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+.ImagenesSecundarios1{
+  margin: 0;
+  padding: 2%;
+  display: flex ;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+}
+.ImagenesSecundarios2{
+  margin: 0;
+  padding: 2%;
+  display: flex ;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+}
+.Imagen1 img{
+  padding: 0%;
+  box-shadow: 2px 2px #02010a;
+  border: solid 2px black;
+  max-width: inherit;
+
+}
+.Imagen1 img:hover{
+    transform: rotate(10deg);
+    transition: 1s;
+    box-shadow: 2px 2px #82c3a6;
+}
+.Imagen2 img{
+  padding: 0%;
+  border: solid 2px black;
+  max-width: inherit;
+  overflow: hidden;
+  box-shadow: 2px 2px #02010A;
+}
+.Imagen2 img:hover{
+    transform: translate(5px,-10px);
+    transition: 1s;
+    box-shadow: 2px 2px #82c3a6;
+}
+.Imagen4 img{
+  padding: 0;
+  box-shadow: 2px 2px #02010a;
+  border: solid 2px black;
+  max-width: inherit;
+  filter: grayscale(100%);
+}
+.Imagen3 img{
+  padding: 0;
+  box-shadow: 2px 2px #02010a;
+  border: solid 2px black;
+  max-width: inherit;
+  filter: blur(10px);
+}
+.imagen5 img{
+  padding: 0%;
+  border: solid 2px black;
+  max-width: inherit;
+  overflow: hidden;
+  box-shadow: 2px 2px #02010A;
+}
+.imagen6 img{
+  padding: 0%;
+  border: solid 2px black;
+  max-width: inherit;
+  overflow: hidden;
+  box-shadow: 2px 2px #02010A;
+  filter: sepia(90%);
+}
+.Fig {
+  text-align: center;
+}
+
+/*-------------------------------------------------*/
+.Footer{
+  height: 10%;
+  margin: 0;
+  order: 3;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+.ColFo{
+  width:50%
+}
+/*--------Media Queries----------------------------*/
+@media (max-width:900px ){
+  .contenido{
+    width: 100%;
+    padding: 0% 0%;
+  }
+
+  .Footer{
+    display: flex;
+    flex-direction: column;
+  }
+  #Titulo {
+    text-align: center;
+    width: 100%;
+  }
+  #Menu {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ImagenesSecundarios{
+    flex-direction: column;
+  }
+  .ImagenesSecundarios1{
+    flex-direction: column;
+  }
+  .ImagenesSecundarios2{
+    flex-direction: column;
+  }
+}
+/*---------Keyframes----------------*/
+@-webkit-Keyframes bounce{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
